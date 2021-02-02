@@ -1,0 +1,41 @@
+---
+title: "Developing Data Products Week 4 Assignment"
+author: "Jenna Preston"
+date: "2/2/2021"
+output: 
+  ioslides_presentation: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This Shiny application shows an interactive barplot of the United States personal expenditure data.  The expenditures presented are in billions of dollars.  The expenditures are from the years 1940, 1945, 1950, 1955, and 1960 and are split up into 5 categories: food and tobacco, household operation, medical and health, personal care, and private education.
+
+## Data Set
+
+The data set used in this Shiny application is the "USPersonalExpenditure" dataset.  This data was taken from the World Almanac and Book of Facts, 1962, page 756. This is a summary of the data in this dataset.
+
+```{r, echo = FALSE}
+summary(USPersonalExpenditure)
+```
+
+## How to use the Shiny App
+
+To use this Shiny app, first pick the year that you would like to look at from the drop down.  The barplot will then update according to the data from that year.  The bottom of the page will then display the total expenditures in billions of dollars for that year over all categories.
+
+## Shiny App Location
+
+This Shiny App is located here:
+
+[Shiny App](https://jpreston822.shinyapps.io/developing_data_products_2/)
+
+The source code can be found here:
+
+[ui.R and server.R files](https://github.com/Jpreston822/Developing-Data-Products-Week-4-Assignment.git)
+
+
+
